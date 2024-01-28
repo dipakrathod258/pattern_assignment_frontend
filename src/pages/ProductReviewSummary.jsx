@@ -30,7 +30,6 @@ export default function ProductReviewSummary() {
         .then((response) => response.json())
         .then((data) => {
           setProductReviewSummary(data.data)
-          setIsLoading(false)
         } )
     }
 
