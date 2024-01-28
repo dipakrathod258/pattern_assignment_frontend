@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <Container className='flex a-center j-between'>
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <a href="/"><img src={logo} alt="logo" /></a>
       </div>
     </Container>
   )
