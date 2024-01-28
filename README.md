@@ -35,11 +35,22 @@ Go to your browser & check => Open [http://localhost:3000](http://localhost:3000
 
 ### Project UI Page Screenshots:
 
-##### Product Customer Reviews Page Loading:
+##### Product Reviews Summarised successfully:
+![alt text](https://github.com/dipakrathod258/pattern_assignment_frontend/blob/main/src/assets/documentation_images/product_review_summarise_success.png?raw=true)
+
+
+##### Product Reviews Summarisation fails due to OPENAI API fails:
+
+![alt text](https://github.com/dipakrathod258/pattern_assignment_frontend/blob/main/src/assets/documentation_images/product_review_summarise_fails.png?raw=true)
+
+
+##### Actual Product Customer Reviews Loading:
+
 ![alt text](https://github.com/dipakrathod258/pattern_assignment_frontend/blob/main/src/assets/documentation_images/product_reviews_loading.png?raw=true)
 
 
-##### Product Customer Reviews:
+##### Actual Product Customer Reviews for product loaded successfully:
 
 ![alt text](https://github.com/dipakrathod258/pattern_assignment_frontend/blob/main/src/assets/documentation_images/producct_customer_reviews.png?raw=true)
+
 
