@@ -1,3 +1,6 @@
+body {
+  background-color: #131921;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,131 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main-container {
+  padding: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  display: grid;
+  max-height: 150px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  grid-template-rows: 20px 50px 1fr 50px;
+  box-shadow: 0px 6px 10px rgba(74, 70, 74, 0.414);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.readMore,
+.close,
+.card div.card_div {
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card div ul {
+  display: flex;
+  list-style: none;
+}
+
+.card div ul li {
+  margin: 0 0.3rem;
+  font-size: 1.1rem;
+}
+
+.desc {
+  color: rgb(66, 59, 59);
+}
+
+.readMore::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: all 0.5s;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.readMore:hover {
+  color: #fff;
+}
+
+.readMore:hover::after {
+  width: 100%;
+}
+
+.card div {
+  grid-row: 3/3;
+}
+
+.read-more {
+  grid-row: 5/5;
+  align-self: center;
+}
+
+.card:nth-child(1n) {
+  background: #3fbafe;
+}
+
+.card:nth-child(2n) {
+  background:#f7a976;
+}
+
+.card:nth-child(3n) {
+  background:#b69efe;
+}
+
+.card:nth-child(4n) {
+  background: #60efbc;
+}
+
+.card:nth-child(5n) {
+  background: #f588d8;
+}
+
+
+@media (max-width: 1600px) {
+  .cards {
+      justify-content: center;
+  }
+}
+
+.float-container {
+  margin-top: 15px
+}
+
+.float-child {
+  float: left;
+}  
+
+.logo {
+  cursor: pointer;
 }
