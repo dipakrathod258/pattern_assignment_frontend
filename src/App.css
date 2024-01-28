@@ -166,3 +166,9 @@ body {
 .logo {
   cursor: pointer;
 }
+
+.loading-icon {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 15%;
+}

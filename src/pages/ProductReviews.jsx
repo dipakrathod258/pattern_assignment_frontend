@@ -8,6 +8,7 @@ export default function ProductReviews() {
 
   // Declaring the React State variable here to access it in HTML
   const [productReviews, setProductReviews] = useState({'data': []});
+  const [isLoading, setIsLoading] = useState(true);
 
   // Fetching the API response from backend here
   const fetchProductReviews = () => {
@@ -28,14 +29,16 @@ export default function ProductReviews() {
         body: JSON.stringify(productReviewRequestBody)
       })
         .then((response) => response.json())
-        .then((data) => setProductReviews(data.data))
+        .then((data) => {
+          setProductReviews(data.data)
+          setIsLoading(false)
+        } )
     }
 
   // This Lifecycle hook is created so that fetchProductReviews function can be called on page load 
   useEffect(() => {
     fetchProductReviews();
   }, []);
-
 
   return (
     <Container>
@@ -44,6 +47,8 @@ export default function ProductReviews() {
         <div className="body flex column a-center j-center">
             <div className="main-container">
             <h3>Product Reviews:</h3>
+            {isLoading && <div className='loading-icon'><i className='fa fa-spinner fa-spin'></i></div>}
+
               {productReviews.length > 0 && productReviews.map((element, index) => 
                 <ProductReviewCard 
                   key={element.id}
