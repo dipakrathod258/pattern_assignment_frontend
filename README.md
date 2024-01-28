@@ -32,3 +32,14 @@ In the project directory, you can run:
 Once you run "npm start" the frontend will open on your localhost by default on port no 3000
 
 Go to your browser & check => Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### Project UI Page Screenshots:
+
+##### Product Customer Reviews Page Loading:
+![alt text](https://github.com/dipakrathod258/pattern_assignment_frontend/blob/main/src/assets/documentation_images/product_reviews_loading.png?raw=true)
+
+
+##### Product Customer Reviews:
+
+![alt text](https://github.com/dipakrathod258/pattern_assignment_frontend/blob/main/src/assets/documentation_images/producct_customer_reviews.png?raw=true)
+
